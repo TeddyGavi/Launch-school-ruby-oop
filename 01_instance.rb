@@ -96,4 +96,4 @@ puts civic.year
 # civic.year = "20000"
 civic.spray_paint("Pink")
 civic.car_off
-puts civic
+pp civic
