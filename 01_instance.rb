@@ -26,7 +26,7 @@ end
 
 class MyCar
   attr_accessor :speed, :color
-  attr_reader :year
+  attr_reader :year, :model
   def initialize(y, c, m)
     @year = y
     @color = c
@@ -58,6 +58,15 @@ class MyCar
     self.color = color
    puts "You have changed your cars color to #{color}!" 
   end
+
+  def self.gas_mileage(miles, gallons)
+    puts "Your car is rated at #{miles/gallons} m/g"
+  end
+
+  def to_s
+    puts "My car is a #{color} #{model} made in #{year}"
+  end
+
 end
 
 sparky = GoodDog.new("Sparky", "12 inches", "10lbs")
@@ -87,3 +96,4 @@ puts civic.year
 # civic.year = "20000"
 civic.spray_paint("Pink")
 civic.car_off
+puts civic
