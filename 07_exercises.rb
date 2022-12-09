@@ -79,6 +79,7 @@ truck.old?
 class Student
   attr_reader :name
   attr_reader :grade
+  
   def initialize(name, grade)
     @name = name
     @grade = grade
